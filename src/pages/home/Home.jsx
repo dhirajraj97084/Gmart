@@ -1,14 +1,19 @@
 import React, { useContext } from 'react'
 import Layout from '../../component/layout/Layout'
-import mycontext from '../../context/data/mycontext'
+import Herosection from '../../component/herosection/Herosection'
+import Filter from '../../component/filter/Filter'
+import ProductCard from '../../component/productCart/ProductCard'
+import Track from '../../component/track/Track'
 
 function Home() {
-    const context=useContext(mycontext);
-    const {}=context;
   return (
     <Layout>
-      home
-      <h1></h1>
+      <h1>
+        <Herosection/>
+        <Filter/>
+        <ProductCard/>
+        <Track/>
+      </h1>
     </Layout>
   )
 }
